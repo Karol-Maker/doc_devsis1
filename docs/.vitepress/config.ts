@@ -1,35 +1,29 @@
-import { defineConfig } from 'vitepress';
-
-// refer https://vitepress.dev/reference/site-config for details
-export default defineConfig({
-  lang: 'en-US',
-  title: 'VitePress',
-  description: 'Vite & Vue powered static site generator.',
-
+export default {
+  title: "Gestão Parreiral",
+  description: "Documentação do Sistema de Gestão do Parreiral",
+  
   themeConfig: {
-    nav: [
-      { text: 'Example', link: '/example' },
-
-      // {
-      //   text: 'Dropdown Menu',
-      //   items: [
-      //     { text: 'Item A', link: '/item-1' },
-      //     { text: 'Item B', link: '/item-2' },
-      //     { text: 'Item C', link: '/item-3' },
-      //   ],
-      // },
-
-      // ...
-    ],
-
     sidebar: [
       {
-        // text: 'Guide',
-        items: [
-          { text: 'Example', link: '/example' },
-          // ...
-        ],
+        text: "Início",
+        link: "/"
       },
-    ],
-  },
-});
+      {
+        text: "Documentação",
+        collapsed: false,
+        items: [
+          { text: "1G – Introdução", link: "/1G" },
+          { text: "2G – Descrição", link: "/2G" },
+          { text: "3G – Principais Recursos e Funcionalidades ", link: "/3G" },
+          { text: "4G – Diagrama de Caso de Uso", link: "/4G" },
+          { text: "5G – Diagrama de Classes", link: "/5g" },
+          { text: "6G – Protótipos de Telas ", link: "/6g" },
+          { text: "7G – Cronograma e Entrega", link: "/7g" },
+          { text: "8G – Riscos e Mitigação", link: "/8g" },
+          { text: "9G – Custos e Orçamento", link: "/9g" },
+          { text: "10G – Considerações Finais", link: "/10g" }
+        ]
+      }
+    ]
+  }
+}
